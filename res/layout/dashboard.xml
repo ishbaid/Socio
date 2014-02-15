@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#000000">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                   
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="45dp"
+                        android:src="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/welcome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:text="Welcome!"
+                        android:textSize="48dp" 
+                        android:textColor="#FFFF00"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="100" >
+
+                    <EditText
+                        android:id="@+id/field"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" 
+                        android:hint="Enter Socio Username"
+                        android:textColorHint="#FFFF00"
+                        android:layout_marginTop="20dp"
+                        android:textColor="#000000">
+                       
+						
+                        <requestFocus />
+                    </EditText>
+                    
+                     <Button
+                        android:id="@+id/search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Search"
+                        android:layout_marginTop="25dp"
+                         />
+                    
+                    
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
